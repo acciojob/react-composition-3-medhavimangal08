@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactDom from "react-dom";
-
 const Tooltip = ({ text, children }) => {
   let [isHovered, setisHovered] = useState(false);
   return (
