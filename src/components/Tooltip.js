@@ -7,7 +7,7 @@ const Tooltip = ({ text, children }) => {
       {isHovered && <p className="tooltiptext">{text}</p>}
       <h1
         className="tooltip"
-        onMouseOver={() => setisHovered(true)}
+        onMouseEnter={() => setisHovered(true)}
         onMouseLeave={() => setisHovered(false)}
       >
         {children}
