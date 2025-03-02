@@ -8,8 +8,12 @@ const Tooltip = ({ text, children }) => {
       onMouseEnter={() => setisHovered(true)}
       onMouseLeave={() => setisHovered(false)}
     >
-      {isHovered && <div>{text}</div>}
-      {children}
+      {isHovered && (
+        <div>
+          <h2>{text}</h2>
+        </div>
+      )}
+      <p>{children}</p>
     </div>
   );
 };
